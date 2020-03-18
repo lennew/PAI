@@ -3,10 +3,6 @@ html, body, p {
     padding: 0;
 }
 
-body {
-    border: 3px solid;
-}
-
 * {
     font-family: Verdana;
     font-weight: 0;
