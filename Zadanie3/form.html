@@ -3,14 +3,11 @@
     <head>
         <meta charset="utf-8"/>
         <title>JavaScript</title>
-        <script src="form_check.js"></script>
         <link rel="stylesheet" type="text/css" href="styles.css">
     </head>
     <body>
-        
         <table>
             <tbody>    
-            <script>alterRows(1, document.getElementsByTagName("tr")[0]);</script>                
                 <tr><td>Wiersz 1</td></tr>
                 <tr><td>Wiersz 2</td></tr>
                 <tr><td>Wiersz 3</td></tr>
@@ -20,6 +17,8 @@
                 <tr><td>Wiersz 7</td></tr>
             </tbody>
         </table>
+
+        <button onclick="swapRows(this)">Zamiana!</button>
 
         <form name="dane_osobowe">
         <table>
@@ -37,10 +36,20 @@
             <tr><td>Kod pocztowy</td><td><input type="text" name = "f_kod"><span class="err" id="e_kod"></span></td></tr>
             <tr><td>Ulica/Osiedle</td><td><input type="text" name = "f_ulica"><span class="err" id="e_ulica"></span></td></tr>
             <tr><td>Miasto</td><td><input type="text" name = "f_miasto"><span class="err" id="e_miasto"></span></td></tr>
-            <tr><td>Uwagi</td><td><textarea rows="5" cols="15" name = "f_uwagi"></textarea>
-            </td></tr>
+            <tr>
+                <td>Uwagi</td>
+                <td>
+                    <textarea rows="5" cols="15" name = "f_uwagi" 
+                        onkeyup="cnt(this.form.f_uwagi, document.getElementById('zostalo'), 150)">
+                    </textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>Pozostało <span id='zostalo'>150</span> znaków</td>
+            </tr>
             <tr><td colspan="2"><input onclick="return validate(this.form)" type="submit" value="Prześlij"></td></tr>    
         </table>
         </form>
     </body>
+    <script src="form_check.js"></script>
 </html>

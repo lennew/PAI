@@ -10,8 +10,6 @@ function validate(form) {
     return valid;
 }
 
-
-
 function alterRows(i, e) {
     if (e) {
         if (i % 2 == 1) {
@@ -45,7 +43,6 @@ function checkStringAndFocus(obj, msg, func) {
     return true;
 }
 
-
 function isEmailInvalid(str) {
     let email = /^[a-zA-Z_0-9\.]+@[a-zA-Z_0-9\.]+\.[a-zA-Z][a-zA-Z]+$/;
     return !email.test(str)
@@ -59,3 +56,32 @@ function isWhiteSpaceOrEmpty(str) {
     return /^[\s\t\r\n]*$/.test(str);
 }
 
+function nextNode(e) {
+    while (e && e.nodeType != 1)
+        e = e.nextSibling;
+    return e;
+}
+
+function prevNode(e) {
+    while (e && e.nodeType != 1)
+        e = e.previousSibling;
+    return e;
+}
+
+function swapRows(b) {
+    let tab = prevNode(b.previousSibling);
+    let tBody = nextNode(tab.firstChild);
+    let lastNode = prevNode(tBody.lastChild);
+    tBody.removeChild(lastNode);
+    let firstNode = nextNode(tBody.firstChild);
+    tBody.insertBefore(lastNode, firstNode);
+}
+
+function cnt(form, msg, maxSize) {
+    if (form.value.length > maxSize)
+        form.value = form.value.substring(0, maxSize);
+    else
+        msg.innerHTML = maxSize - form.value.length;
+}
+
+alterRows(1, document.getElementsByTagName("tr")[0]);
