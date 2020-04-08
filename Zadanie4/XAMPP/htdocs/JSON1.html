@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>JSON</title>
+    <script type="text/javascript"
+    src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        var d =
+            {
+                "Pracownicy": {
+                    "Pracownik": [
+                        { "Imie": "Maciej", "Nazwisko": "Zakrzewicz" },
+                        { "Imie": "Maciej", "Nazwisko": "Piernik"}
+                    ]
+                }
+            };
+        $(function () {
+            d.Pracownicy.Pracownik.map(prac => 
+                $('#x').append('<div>' + prac.Imie + ' ' + prac.Nazwisko + '</div>'));
+        });
+    </script>
+</head>
+<body>
+    <h1>Prowadzący mojego ulubionego przedmiotu</h1>
+    <div id="x"></div>
+</body>
+</html>
