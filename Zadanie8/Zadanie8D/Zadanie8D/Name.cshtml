@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+
+@{
+    var name = Request["name"];
+}
+
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <ul>
+        @for (int i = 0; i < 10; ++i)
+        {
+            <li>His name is: @name</li>
+        }
+    </ul>
+</body>
+</html>
