@@ -1,0 +1,1412 @@
+{
+"stories": [
+  {
+    "text": "Na brukowany podjazd pałacu wtoczył się delikatnie acz stanowczo elegancki Rolls-Royce Phantom z czarnym połyskującym lakierem. Najpierw wysiadł Twój szofer.",
+    "buttons": [
+      {
+        "btnName": "Załóż szapoklak",
+        "goto": 2,
+        "addThing": "Szapoklak"
+      },
+      {
+        "btnName": "Zaczekaj na otwarcie drzwi",
+        "goto": 3,
+        "addThing": "Laska"
+      }
+    ]
+  },
+  {
+    "text": "W momencie nasuwania cylindra na czubek głowy, Maurycy otwiera Ci drzwi.\n-Życzę udanej zabawy.\n-Dziękuję przyjacielu!",
+    "buttons": [
+      {
+        "btnName": "Poklep Maurycego po plecach",
+        "goto": 4
+      },
+      {
+        "btnName": "Pójdź w stronę drzwi pałacu",
+        "goto": 5
+      }
+    ]
+  },
+  {
+    "text": "Kierowca otwiera Ci drzwi, łapiesz swoją laskę i wychodzisz z samochodu podpierając się z gracją.",
+    "buttons": [
+      {
+        "btnName": "Pójdź w stronę drzwi pałacu",
+        "goto": 5
+      }
+    ]
+  },
+  {
+    "text": "Niesamowity człowiek, myślisz sobie kierując swe kroki w stronę olbrzymiej posiadłości.",
+    "buttons": [
+      {
+        "btnName": "Kontynuuj",
+        "goto": 5
+      }
+    ]
+  },
+  {
+    "text": "Słyszysz za sobą trzeszczenie bruku pod oponami samochodu, to Maurycy jadący zaparkować samochód. Podchodzisz do drzwi, łapiesz za klamkę. Przez moment przeszedł Cię dreszcz, coś jakby dotyk przeczucia.",
+    "buttons": [
+      {
+        "btnName": "Otwórz drzwi",
+        "goto": 11
+      },
+      {
+        "btnName": "Obejdź dom dookoła",
+        "goto": 6
+      }
+    ]
+  },
+  {
+    "text": "Idąc wzdłuż ściany domu napotykasz niewielkie drzwi boczne dla służby.",
+    "buttons": [
+      {
+        "btnName": "Wejdź do środka",
+        "goto": 11
+      },
+      {
+        "btnName": "Idź dalej",
+        "goto": 7
+      }
+    ]
+  },
+  {
+    "text": "Mijasz kilka okien, nie słyszysz odgłosów zabawy, czujesz pewne zaniepokojenie, ale ciekawość zwycięża.",
+    "buttons": [
+      {
+        "btnName": "Kontynuuj",
+        "goto": 8
+      }
+    ]
+  },
+  {
+    "text": "Jesteś na tyłach domu, widzisz rozpościerające się połacie pól w oddali. Bliżej natomiast możesz dostrzec piękny ogród.",
+    "buttons": [
+      {
+        "btnName": "Wejdź do ogrodu",
+        "goto": 9
+      },
+      {
+        "btnName": "Kontynuuj obchód domu",
+        "goto": 10
+      }
+    ]
+  },
+  {
+    "text": "Podchodzisz do bramy ogrodu, niestety, kilka szarpnięć daje Ci do zrozumienia, że dziś nie będziesz podziwiać przystrzyżonych żywopłotów - ogród jest zamknięty",
+    "buttons": [
+      {
+        "btnName": "Wróć w pobliże domu",
+        "goto": 10
+      }
+    ]
+  },
+  {
+    "text": "Idąc wzdłuż ścian domu nie napotkałeś już żadnego wejścia, ani nikogo kto mógłby Ci powiedzieć gdzie się wszyscy podziali. W końcu dochodzisz do drzwi, przed którymi zostawił Cię Maurycy.",
+    "buttons": [
+      {
+        "btnName": "Wejdź do środka",
+        "goto": 11
+      }
+    ]
+  },
+  {
+    "text": "Wchodzisz, lecz zamiast spodziewanego przyjęcia urodzinowego księcia Kornwalii, zastajesz... pusty budynek.",
+    "buttons": [
+      {
+        "btnName": "Rozejrzyj się",
+        "goto": 12
+      }
+    ]
+  },
+  {
+    "text": "Idziesz w stronie salonu przyozdobionego XVIII wiecznymi meblami, na których stoją majestatyczne złocone figury. Przechodzisz do kuchni, palniki są zimne, nikt nawet nie szykował się do urządzenia przyjęcia. Czyżbyś pomylił daty?",
+    "buttons": [
+      {
+        "btnName": "Sprawdź kalendarz",
+        "goto": 13
+      },
+      {
+        "btnName": "Idź dalej",
+        "goto": 14
+      }
+    ]
+  },
+  {
+    "text": "Nie, wszystko tak jak powinno być: 21 lipca 1925 roku - urodziny Wilhelma. Chowasz kalendarz i idziesz dalej.",
+    "buttons": [
+      {
+        "btnName": "Zamknij kalendarz",
+        "goto": 14,
+        "addEvent": "Jest 21 lipca 1925 roku"
+      }
+    ]
+  },
+  {
+    "text": "Przechodzisz całe pierwsze piętro, lecz nic ciekawego nie spostrzegasz, decydujesz się na sprawdzienie poziomu wyżej. Jednak tam też nic nadzwyczajnego nie znajdujesz.\n-Trudno - mówisz sam do siebie - po powrocie wyślę list do Wilhelma z zapytaniem o dzisiejsze wydarzenia. Decydujesz się na powrót, wiesz gdzie zaparkował Maurycy - wybiera to samo miejsce od 10 lat.",
+    "buttons": [
+      {
+        "btnName": "Idź w stronę schodów",
+        "goto": 15
+      }
+    ]
+  },
+  {
+    "text": "Idąc dostrzegasz wyjście na balkon, które wcześniej musiało Ci umknąć. Bardzo lubisz obserwować naturę, dlatego decydujesz się zaczerpnąć świeżego powietrza. Nikt Ci nie zabroni, w końcu cały dom jest pusty.",
+    "buttons": [
+      {
+        "btnName": "Wyjdź na balkon",
+        "goto": 16
+      }
+    ]
+  },
+  {
+    "text": "Głęboki wdech... I kaszel. Dlaczego to Cię tak męczy? Prowadzisz zdrowy tryb życia, jadasz jabłka ze swojego gaju, pijesz dużo wody i nawet czasem się myjesz, Bóg raczy wiedzieć skąd to się wzięło.",
+    "buttons": [
+      {
+        "btnName": "Zapal papierosa",
+        "goto": 17
+      }
+    ]
+  },
+  {
+    "text": "Naprawdę niesamowite są wyroby tytoniowe Pall Mall, chyba najlepsze jakie dotąd kupowałem.",
+    "buttons": [
+      {
+        "btnName": "Zaciągnij się",
+        "goto": 18
+      }
+    ]
+  },
+  {
+    "text": "Przykładasz papieros do ust patrząc na pole. Spokojny, niczym niezmącony krajobraz.\nNagle jednak dostrzegasz coś dziwnego. Czarny punkt zbliżający się w Twoją stronę od strony horyzontu. Po skupieniu wzroku zauważasz, że to człowiek, jednak nie wygląda jak wszyscy inni, a na dodatek trzyma kawał metalu. Tuż po tym jak zdążyłeś zauważyć, że ta istota to Homo Sapiens, za nim pojawiło się 7 kolejnych czarnych punktów. Wszyscy trzymają ten sam kawał metalu w ręku, zaczynasz się martwić.",
+    "buttons": [
+      {
+        "btnName": "Kontynuuj",
+        "goto": 19
+      }
+    ]
+  },
+  {
+    "text": "CHECK",
+    "routes" : [
+      {
+        "picked": 2,
+        "goto": 20
+      }, {
+        "picked": 3,
+        "goto": 21
+      }
+    ]
+  },
+  {
+    "text": "Intuicja podpowiada Ci, powinieneś zdjąć szapoklak.",
+    "buttons": [
+      {
+        "btnName": "Sprawdź nakrycie głowy",
+        "goto": 22,
+        "addThing": "Granat"
+      },
+      {
+        "btnName": "Załóż spowrotem",
+        "goto": 34
+      }
+    ]
+  },
+  {
+    "text": "Trzymając swoją laskę wyczuwasz coś dziwnego, coś czego wcześniej nie było.",
+    "buttons": [
+      {
+        "btnName": "Sprawdź laskę",
+        "goto": 23,
+        "removeThing": "Laska",
+        "addThing": "Karabin w lasce"
+      },
+      {
+        "btnName": "Zignoruj przeczucie",
+        "goto": 34
+      }
+    ]
+  },
+  {
+    "text": "Dotykając miękkiego wnętrza ubioru zauważasz, że dno kapelusza jest... krzywe. Poprawiasz je, ale ono wpada jedną stroną do środka. Wyjmujesz je, a Twoim oczom ukazuje się... przypominający kamień kawał metalu.\n-Granat ręczny F1 - mówisz do siebie, chociaż nie masz pojęcia co to oznacza.",
+    "buttons": [
+      {
+        "btnName": "Popatrz na pole",
+        "goto": 24
+      }
+    ]
+  },
+  {
+    "text": "Orientujesz się, żę w zagięciu laski znajduje się... spust karabinowy, a część laski, która normalnie dotyka podłogi ma dziurę, w której znajduje się gwintowana lufa.",
+    "buttons": [
+      {
+        "btnName": "Popatrz na pole",
+        "goto": 24
+      }
+    ]
+  },
+  {
+    "text": "Zauważasz, że czarne punkty są się coraz bliżej. Teraz już wiesz, chociaż nie masz pojęcia skąd, że znalazłeś się pośrodku wojny w Wietnamie, a ze względu na Twój wyjątkowo nieazjatycki wygląd jesteś celem Wietkongu. Nie masz pojęcia skąd wiesz o wojnie w Wietnamie i dlaczego akurat teraz jest ta wojna, przecież mamy 1925 rok, Wietkong nie istnieje i nawet nie było II Wojny Światowej! Nie zastanawiasz się nad tym dłużej, musisz ratować życie!",
+    "buttons": [
+      {
+        "btnName": "Rzuć się do ucieczki",
+        "goto": 33
+      },
+      {
+        "btnName": "Wykorzystaj broń",
+        "goto": 25
+      }
+    ]
+  },
+  {
+    "text": "CHECK",
+    "routes" : [
+      {
+        "picked": 34,
+        "goto": 36
+      },
+      {
+        "picked": 2,
+        "goto": 26
+      }, {
+        "picked": 3,
+        "goto": 37
+      }
+    ]
+  },
+  {
+    "text": "Wietkong...\n-A może to Viet Minh? - nie jesteś pewien. Wrogowie nie zdążyli Cię zauważyć. Kryjesz się za balustradą i czekasz na odpowiedni moment, żeby użyć granatu.",
+    "buttons": [
+      {
+        "btnName": "Czekaj",
+        "goto": 27
+      }
+    ]
+  },
+  {
+    "text": "Ciśnienie zaczyna uderzać Ci do głowy, w której masz tylko plątaninę losowych myśli, czy powinieneś już wykorzystać granat?",
+    "buttons": [
+      {
+        "btnName": "Czekaj",
+        "goto": 28
+      },
+      {
+        "btnName": "Rzuć granat",
+        "goto": 30,
+        "removeThing": "Granat"
+      }
+    ]
+  },
+  {
+    "text": "Mijają kolejne sekundy, nie wiesz co robić.",
+    "buttons": [
+      {
+        "btnName": "Czekaj",
+        "goto": 29,
+        "removeThing": "Granat"
+      },
+      {
+        "btnName": "Rzuć granat",
+        "goto": 31,
+        "removeThing": "Granat"
+      }
+    ]
+  },
+  {
+    "text": "Słyszysz nadbiegających wietnamczyków, któryś z nich Cię zauważył i zaczynają strzelać. Wyciągasz zawleczkę, próbujesz odpuścić łyżkę, jednak... Jest już za późno, zostałeś podziurawiony na wylot kulami, a granat wybucha tuż obok Ciebie.",
+    "buttons": [
+      {
+        "btnName": "Koniec",
+        "goto": 41
+      }
+    ]
+  },{
+    "text": "Wyciągasz zawleczkę, wychylasz się i z precyzją żołnierza Navy Seals wyrzucasz granat jak najdalej się da. Wpatrzony w lecący kawałek metalu zrozumiałeś swój błąd. Wypuściłeś grana zbyt wcześnie. Wybucha on 100 metrów przed wrogiem. Sokole oko wyszkolonych w dżungli żołnierzy Wietkongu wypatruje ten błąd. Mają Cię na celowniku. Padają strzały, trzy pierwsze świsnęły Ci obok ucha, jednak kolejne precyzyjnie przeszywają klatkę piersiową. Ciepło związane z rozległym krwawieniem wewnętrzynm może oznaczać tylko jedno...",
+    "buttons": [
+      {
+        "btnName": "Koniec",
+        "goto": 41
+      }
+    ]
+  },{
+    "text": "Wyciągasz zawlęczkę, delikatnie się wychylasz. Tak! To jest ten moment - rzucasz granat, który trafia idealnie między grupę wrogów. Wszyscy w jednym momencie znikają z powierzchni ziemii. Jesteś bezpieczny!",
+    "buttons": [
+      {
+        "btnName": "Odetchnij z ulgą",
+        "goto": 32
+      }
+    ]
+  },
+  {
+    "text": "Prostujesz się, podnosisz ledwie tlącego się papierosa z ziemi, zaciągasz się i opierasz o barierkę balkonu. W tym momencie Twoje oparcie przestaje istnieć, ukruszył się kawałek kamienia tworzącego balustradę. Twoje ciało zaczyna bezwładnie lecieć w stronę ziemii, żeby w końcu z hukiem uderzyć o posadzkę.",
+    "buttons": [
+      {
+        "btnName": "Koniec",
+        "goto": 41
+      }
+    ]
+  },
+  {
+    "text": "Podnosisz się i biegniesz jak najszybciej się da w stronę drzwi domu. Jednak kule karabinów, lecące z prędkością 800 metrów na sekundę są szybsze i za chwilę czujesz przyszywający ból w lewej stronie klatki piersiowej. Twoje serce zaczyna pompować krew na zewnątrz naczyń, a po chwili zatrzymuje się.",
+    "buttons": [
+      {
+        "btnName": "Koniec",
+        "goto": 41
+      }
+    ]
+  },{
+    "text": "Nie przejmujesz się niczym, pewno to po prostu goście z przyjęcia biegną w stronę domu, ot cała zagadka rozwiązana.",
+    "buttons": [
+      {
+        "btnName": "Pomachaj gościom",
+        "goto": 35
+      }
+    ]
+  },
+  {
+    "text": "Podnosisz rękę, lecz w tym momencie słyszysz dźwięk karabinu Mauser Kar98k, a już po chwili kula, która była kilkaset metrów dalej przeszyła Twoją dłoń. Strach Cię sparaliżował. Jedyne co masz pod drugą ręką to... kamień.",
+    "buttons": [
+      {
+        "btnName": "Dalej",
+        "goto": 24
+      }
+    ]
+  },{
+    "text": "Kamień jest słabą bronią przeciwko wyszkolonym i oddanym jedynemu słusznemu systemowi żołnierzom. Strach Cię jednak sparaliżował i nie myślisz logicznie, więc rzucasz kamieniem. Tak jak przewidywałeś. Umierasz szybciej niż zdążyłbyś wypowiedzieć słowo \"kami...\"",
+    "buttons": [
+      {
+        "btnName": "Koniec",
+        "goto": 41
+      }
+    ]
+  },{
+    "text": "Jesteś ubrany w elegancki garnitur, jesteś bogaty, masz na sobie złoto, a Twoja laska jest karabinem. Istnieje tylko jeden sposób na wyjście z tej sytuacji. Odbezpieczasz broń wyskakujsz zza balustrady i niczym Al Pacino mówisz...",
+    "buttons": [
+      {
+        "btnName": "\"Say hello to my little friend\"",
+        "goto": 38,
+        "addEvent": "Rola jako Tony Montana w filmie \"Człowiek z blizną\" + 7 celów zlikwidowanych"
+      }
+    ]
+  },
+  {
+    "text": "Wiązka z karabinu maszynowego przeszyła powietrze, część pocisków trafiła w cel. Siedmiu z ośmiu wietnamskich partyzantów zneutralizowanych, jeden został ranny w ramię.",
+    "buttons": [
+      {
+        "btnName": "Oszczędź nieszczęśnika",
+        "goto": 39,
+        "addEvent": "Litościwy"
+      },
+      {
+        "btnName": "Bez litości",
+        "goto": 40,
+        "removeEvent": "Rola jako Tony Montana w filmie \"Człowiek z blizną\" + 7 celów zlikwidowanych",
+        "addEvent": "Rola jako Tony Montana w filmie \"Człowiek z blizną\" + 8 celów zlikwidowanych"
+      }
+    ]
+  },
+  {
+    "text": "Opuszczasz lufę karabinu i patrzysz na swoje dzieło zniszczenia. Jednak sumienie Cię nie gryzie, ponieważ zachowałeś jedno istnienie od śmierci. We wszechświecie jednak panuje równowaga, a wietnamscy żołnierze są niezwykle przebiegli. Dzisiejsza potyczka to albo Ty albo oni, wybrałeś ich... Umierasz na balkonie Wilhelma od pocisku karabinu rannego wietnamczyka.",
+    "buttons": [
+      {
+        "btnName": "Koniec",
+        "goto": 41,
+        "addThing": "i niezbyt mądry"
+      }
+    ]
+  },{
+    "text": "Opierasz karabin na ramieniu, uspokajasz oddech, wdech, pociągasz za sput... już po wszystkim.",
+    "buttons": [
+      {
+        "btnName": "Odetchnij z ulgą",
+        "goto": 32
+      }
+    ]
+  },
+  {
+    "text": "Koniec",
+    "buttons": [
+      {
+        "btnName": "Koniec...",
+        "goto": 42
+      }
+    ]
+  },
+  {
+    "text": "Koniec?",
+    "buttons": [
+      {
+        "btnName": "Tak koniec!",
+        "goto": 43,
+        "removeThing": "ALL",
+        "removeEvent": "ALL"
+      }
+    ]
+  },
+  {
+    "text": "Nie. To dopiero początek.",
+    "buttons": [
+      {
+        "btnName": "Tak?",
+        "goto": 44
+      }
+    ]
+  },
+  {
+    "text": "BEEP! BEEP! BEEP! BEEP! BEEP! BEEP! BEEP! BEEP! BEEP! BEEP! BEEP! BEEP! BEEP! BEEP! BEEP! BEEP! BEEP! BEEP!",
+    "buttons": [
+      {
+        "btnName": "BEEP!",
+        "goto": 45
+      }
+    ]
+  },{
+    "text": "BEEP! BEEP! BEEP! BEEP! BEEP! BEEP! BEEP! BEEP! BEEP! BEEP!",
+    "buttons": [
+      {
+        "btnName": "\"Drzemka\"",
+        "goto": 46,
+        "addEvent": "Drzemkowicz"
+      },
+      {
+        "btnName": "\"Wyłącz\"",
+        "goto": 54
+      },
+      {
+        "btnName": "Obudź się i wyłącz budzik",
+        "goto": 47
+      }
+    ]
+  },
+  {
+    "text": "...",
+    "buttons": [
+      {
+        "btnName": "5 minut później",
+        "goto": 45
+      }
+    ]
+  },
+  {
+    "text": "Otwierasz oczy. Co się właśnie stało?! Ta pandemia Cię wykończy, z Twoich snów mógłbyś spokojnie napisać książkę... No dobra, może chociaż niewielkiego RPG-a tekstowego. Trzeba wstawać i ratować świat niewychodzeniem z domu.",
+    "buttons": [
+      {
+        "btnName": "Usiądź na skraju łóżka",
+        "goto": 48
+      }
+    ]
+  },
+  {
+    "text": "Przecierasz twarz, szukasz kapci. No tak, znowu zostawiłeś je przy kompie. Wstajesz, kierujesz się w strone biurka i w tym momencie Twój piękny bohaterski dzień zamienia się w koszmar. Spostrzegasz żółtą karteczkę, którą przecież sam wczoraj sobie napisałeś.",
+    "buttons": [
+      {
+        "btnName": "Przeczytaj kartkę",
+        "goto": 49
+      }
+    ]
+  },
+  {
+    "text": "To Twoje zadanie na dziś... Zrób zakupy! To wymaga od Ciebie poświęcenia - wyjścia na zewnątrz. Media trąbią o niebezpieczeństwie. Radio, telewizja, internet pełne koronawirusa, wszyscy w maseczkach, a Ty musisz iść do sklepu. No nic, szykujesz się do wyjścia.",
+    "buttons": [
+      {
+        "btnName": "Ubierz się",
+        "goto": 50
+      },
+      {
+        "btnName": "Zjedz śniadanie",
+        "goto": 51
+      }
+    ]
+  },
+  {
+    "text": "Słońce delikatnie świecie nad horyzontem, wydaje się być ciepło. Właśnie wydaje się... Ten maj jest straszny, niby ciepły a jednak zimny. Nauczony doświadczeniem poprzedniego tygodnia oprócz standardowych ciuchów zakładasz bluzę.",
+    "buttons": [
+      {
+        "btnName": "Dalej",
+        "goto": 52,
+        "addThing": "Bluza"
+      }
+    ]
+  },  {
+    "text": "Idziesz do kuchni, po tym śnie strasznie zgłodniałeś, ale na szczęście wczoraj do implementacji projektu w ASP.NET MVC zamówiłeś sobie tradycyjne tureckie danie o rozmiarze XXL... i trochę się zostało. Wrzucasz kebsa do mikrofali, czekasz na wspaniałe \"Dzyń\" i rozkoszujesz się tym przepysznym i niezrowym posiłkiem.",
+    "buttons": [
+      {
+        "btnName": "Dalej",
+        "goto": 52,
+        "addEvent": "Jesteś najedzony"
+      }
+    ]
+  },  {
+    "text": "Czujesz, że czegoś Ci brakuje. Telefon! Zawsze w nocy trzymasz go pod poduszką, teraz też tam jest.",
+    "buttons": [
+      {
+        "btnName": "Sprawdź godzinę",
+        "goto": 53,
+        "addThing": "Telefon"
+      }
+    ]
+  },
+  {
+    "text": "CHECK",
+    "routes" : [
+      {
+        "picked": 46,
+        "goto": 55
+      },
+      {
+        "picked": 54,
+        "goto": 55
+      },
+      {
+        "picked": 47,
+        "goto": 58
+      }
+    ]
+  },
+  {
+    "text": "Budzisz się i jest jakoś zadziwiająco jasno.\n-Ehh, znowu wyłączyłem budzik i zasnąłem, no nic...\nCo się właśnie stało, co to był za sen?! Ta pandemia Cię wykończy, z Twoich snów mógłbyś spokojnie napisać książkę... No dobra, może chociaż niewielkiego RPG-a tekstowego. Trzeba wstawać i ratować świat niewychodzeniem z domu.",
+    "buttons": [
+      {
+        "btnName": "Usiądź na skraju łóżka",
+        "goto": 48
+      }
+    ]
+  },
+  {
+    "text": "CHECK",
+    "routes" : [
+      {
+        "picked": 50,
+        "goto": 56
+      },
+      {
+        "picked": 51,
+        "goto": 57
+      }
+    ]
+  },  {
+    "text": "Ale późno, a Ty jeszcze nie zjadłeś śniadania! Wpadasz do kuchni, patrzysz na pięknego kebaba zamówionego wczoraj i niedojedzonego, ale nie masz czasu go odgrzewać. Bierzesz zatem jabłko i banana i sprawdzasz czy wszystko masz.",
+    "buttons": [
+      {
+        "btnName": "Wybiegnij w stronę drzwi",
+        "goto": 61
+      }
+    ]
+  },  {
+    "text": "Tyle czasu spędziłeś nad kebabem, a jeszcze się nie ubrałeś! Szybko zaglądasz do szafy, bierzesz co masz akurat pod ręką i sprawdzasz czy wszystko masz",
+    "buttons": [
+      {
+        "btnName": "Wybiegnij w stronę drzwi",
+        "goto": 61
+      }
+    ]
+  },
+  {
+    "text": "CHECK",
+    "routes" : [
+      {
+        "picked": 50,
+        "goto": 59
+      },
+      {
+        "picked": 51,
+        "goto": 60
+      }
+    ]
+  },
+  {
+    "text": "Masz jeszcze dużo czasu, więc spokojnie możesz zjeść śniadanie. Jesteś tak głodny, że praktycznie od razu po podgrzaniu pożerasz na raz wczoraj zamówionego kebaba. Upewniasz się, że wszystko masz...",
+    "buttons": [
+      {
+        "btnName": "Przejdź się po mieszkaniu",
+        "goto": 61,
+        "addEvent": "Jesteś najedzony"
+      }
+    ]
+  },  {
+    "text": "Nie musisz się spieszyć, idziesz się na spokojnie ubrać. Może być dosyć chłodno, więc bierzesz bluzę. Upewniasz się tylko czy wszystko masz...",
+    "buttons": [
+      {
+        "btnName": "Przejdź się po mieszkaniu",
+        "goto": 61,
+        "addThing": "Bluza"
+      }
+    ]
+  },  {
+    "text": "Maseczka...",
+    "buttons": [
+      {
+        "btnName": "CHECK!",
+        "goto": 62,
+        "addThing": "Maseczka"
+      }
+    ]
+  },  {
+    "text": "...płyn do dezynfekcji...",
+    "buttons": [
+      {
+        "btnName": "CHECK!",
+        "goto": 63,
+        "addThing": "Płyn do dezynfekcji"
+      }
+    ]
+  },
+  {
+    "text": "...telefooon...",
+    "buttons": [
+      {
+        "btnName": "CHECK!",
+        "goto": 64
+      }
+    ]
+  },{
+    "text": "...portfel...",
+    "buttons": [
+      {
+        "btnName": "CHECK!",
+        "goto": 65,
+        "addThing": "Portfel"
+      }
+    ]
+  },
+  {
+    "text": "...no i okulary!",
+    "buttons": [
+      {
+        "btnName": "Eeee, nie potrzebuję",
+        "goto": 66
+      },
+      {
+        "btnName": "CHECK!",
+        "goto": 66,
+        "addThing": "Okulary"
+      }
+    ]
+  },
+  {
+    "text": "Dobra, wszystko mam!",
+    "buttons": [
+      {
+        "btnName": "Wychodzimy!",
+        "goto": 67
+      }
+    ]
+  },
+  {
+    "text": "Ufff, ta pandemia jest straszna, dobrze czasem wyjść z domu.",
+    "buttons": [
+      {
+        "btnName": "Idziemy na zakupy!",
+        "goto": 68
+      }
+    ]
+  },
+  {
+    "text": "Wyciągasz telefon, żeby sprawdzić co masz do kupienia\n-Chleb, ser, szynka\nHmm, chyba jeszcze czegoś zapomniałem. No nic, może mi się przypomni w sklepie. Chowasz telefon do kieszeni, i idziesz przed siebie. Po krótkim spacerze znajdujesz się w sklepie. Na wejściu widzisz płyn do dezynfekcji i załóż rękawiczki.",
+    "buttons": [
+      {
+        "btnName": "Na co komu dezynfekcja, koronawirus to wymysł Billa Gates'a",
+        "goto": 69
+      },
+      {
+        "btnName": "Zdezynfekuj ręce",
+        "goto": 69
+      },
+      {
+        "btnName": "Załóż rękawiczki",
+        "goto": 69
+      },
+      {
+        "btnName": "Zdezynfekuj ręce i załóż rękawiczki",
+        "goto": 71
+      }
+    ]
+  },
+  {
+    "text": "CHANCE",
+    "percent": 80,
+    "success": 71,
+    "failure": 70
+  },
+  {
+    "text": "-Halo halo, przepraszam, czy Pan nie wie, że wchodząc do sklepu trzeba zdezynfekować ręce i założyć rękawiczki?\n-Aleee...\nNie ma żadnego ale! Precz mi stąd ale już!\nZostałeś właśnie wyrzucony ze sklepu przez kasjerkę. Musisz spróbować jeszcze raz.",
+    "buttons": [
+      {
+        "btnName": "Kontynuuj",
+        "goto": 68,
+        "addEvent": "Wyrzucony ze sklepu"
+      }
+    ]
+  },
+  {
+    "text": "Udało się, jestem w sklepie. Dobra, to na początku chleb. Ser i szynka są obok siebie, więc można je zabrać później. Zwinnie kierujesz się w stronę piekarnii sklepowej, bo nie masz ochoty na godzinne zakupy. Wchodzisz do alejki z wodą mineralną, gazowaną, niegazowaną, lekko gazowaną, perlage, utlenioną, twardą, miękką, średnią.\n-Kto by pomyślał, że jest tyle rodzajów wód.\nZamyśliłeś się przez chwilę patrząc na wody i nagle... Usłyszałeś nagorszy dźwięk jaki może usłyszeć osoba robiąca zakupy podczas szalejącej pandemi.\n *Ekhem, ekhem, apsik*\nTak. Ktoś zakaszlał i kichnął. I to nie jedna osoba. Jesteś pośrodku alejki, za Tobą młoda kobieta z maseczką, która nie zakrywa jej nosa, a przed Tobą starsza kobieta z maseczką na brodzie. Wiesz, ze najlepszą obroną jest atak, więc od razu przechodzisz do konfrontacji. Podchodzisz do starszej kobiety i...",
+    "buttons": [
+      {
+        "btnName": "Próbujesz się przecisnąć",
+        "goto": 72,
+        "missionStart": 1
+      },
+      {
+        "btnName": "Zwracasz kobiecie uwagę",
+        "goto": 75,
+        "missionStart": 1,
+        "addChances": 10
+      }
+    ]
+  },
+  {
+    "text": "Nagle przypominasz sobie wszystkie wzory z fizyki z liceum dotyczące oddziaływania grawitacyjnego, oddziaływania ciał, wszystkie regułki, które pomagają Ci rozwiązać problem: Czy przecisnę się obok tej Pani tak, aby nie zaraziła mnie koronawirusem. Jednak nie pamiętasz jednego, to zawsze było w karcie wzorów, więc nie musiałeś tego pamiętać... Przyspieszenie ziemskie wynosi:",
+    "buttons": [
+      {
+        "btnName": "9,8",
+        "goto": 74
+      },
+      {
+        "btnName": "9,7",
+        "goto": 73
+      },
+      {
+        "btnName": "9,9",
+        "goto": 73
+      },
+      {
+        "btnName": "Wszystkie odpowiedzi są prawidłowe",
+        "goto": 73
+      }
+    ]
+  },
+  {
+    "text": "Niestety, ale zawsze byłeś kiepski z fizyki. Twoje obliczenia dały wynik: brakuje około 2,34 niutonometra na kilogram sześcienny, żeby się udało",
+    "buttons": [
+      {
+        "btnName": "Zwróć uwagę kobiecie",
+        "goto": 75,
+        "addChances": 5
+      }
+    ]
+  },
+  {
+    "text": "Prawidłowo! Niestety Twoje sprytne obliczenia zdały się na nic, bo odpowiedź jest jedna - nie dasz rady przecisnąć się obok kobiety.",
+    "buttons": [
+      {
+        "btnName": "Zwróć jej uwagę",
+        "goto": 75,
+        "addChances": 15
+      }
+    ]
+  },
+  {
+    "text": "-Przepraszam, czy może się Pani przesunąć?\n-Ale po co, przecież jest dużo miejsca.\n-Tak to prawda, ale koronawirus i w ogóle...\n-No dobrze.",
+    "buttons": [
+      {
+        "btnName": "Ustąp kobiecie",
+        "goto": 76
+      }
+    ]
+  },
+  {
+    "text": "Ty już wiesz co się teraz stanie - ta dziwna sytuacja, kiedy jedna osoba stawia krok w lewo, żeby Cię przepuścić i Ty też stawiasz krok w lewo, w to samo lewo...\nAby jak najbardziej zwiększyć swoje szanse bezpiecznego przejścia musisz zapamiętać sekwencję ruchów kobiety i każdy jej ruch wykonać odwrotnie\nPrzykład: (kobieta: LEWO, ty: PRAWO)",
+    "buttons": [
+      {
+        "btnName": "Do dzieła!",
+        "goto": 77
+      }
+    ]
+  },
+  {
+    "text": "Ruch kobiety: lewo",
+    "buttons": [
+      {
+        "btnName": "Dalej",
+        "goto": 78
+      }
+    ]
+  },
+  {
+    "text": "Ty:",
+    "buttons": [
+      {
+        "btnName": "Lewo",
+        "goto": 79,
+        "addChances": 2
+      },
+      {
+        "btnName": "Prawo",
+        "goto": 79,
+        "addChances": 4
+      }
+    ]
+  },
+  {
+    "text": "Ruch kobiety: lewo, lewo, prawo, lewo",
+    "buttons": [
+      {
+        "btnName": "Dalej",
+        "goto": 80
+      }
+    ]
+  },
+  {
+    "text": "Ty:",
+    "buttons": [
+      {
+        "btnName": "Lewo",
+        "goto": 81,
+        "addChances": 6
+      },
+      {
+        "btnName": "Prawo",
+        "goto": 81,
+        "addChances": 3
+      }
+    ]
+  },
+  {
+    "text": "Znowu Ty:",
+    "buttons": [
+      {
+        "btnName": "Lewo",
+        "goto": 82,
+        "addChances": 6
+      },
+      {
+        "btnName": "Prawo",
+        "goto": 82,
+        "addChances": 3
+      }
+    ]
+  },
+  {
+    "text": "I jeszcze raz:",
+    "buttons": [
+      {
+        "btnName": "Lewo",
+        "goto": 83,
+        "addChances": 3
+      },
+      {
+        "btnName": "Prawo",
+        "goto": 83,
+        "addChances": 6
+      }
+    ]
+  },
+  {
+    "text": "Ty:",
+    "buttons": [
+      {
+        "btnName": "Lewo",
+        "goto": 84,
+        "addChances": 6
+      },
+      {
+        "btnName": "Prawo",
+        "goto": 84,
+        "addChances": 3
+      }
+    ]
+  },
+  {
+    "text": "Ruch kobiety: prawo, lewo, prawo, prawo, lewo, prawo",
+    "buttons": [
+      {
+        "btnName": "Dalej",
+        "goto": 85
+      }
+    ]
+  },
+  {
+    "text": "Ty:",
+    "buttons": [
+      {
+        "btnName": "Prawo",
+        "goto": 86,
+        "addChances": 4
+      },
+      {
+        "btnName": "Lewo",
+        "goto": 86,
+        "addChances": 8
+      }
+    ]
+  },
+  {
+    "text": "A teraz:",
+    "buttons": [
+      {
+        "btnName": "Prawo",
+        "goto": 87,
+        "addChances": 8
+      },
+      {
+        "btnName": "Lewo",
+        "goto": 87,
+        "addChances": 4
+      }
+    ]
+  },
+  {
+    "text": "Prawo czy lewo:",
+    "buttons": [
+      {
+        "btnName": "Lewo",
+        "goto": 88,
+        "addChances": 8
+      },
+      {
+        "btnName": "Prawo",
+        "goto": 88,
+        "addChances": 4
+      }
+    ]
+  },
+  {
+    "text": "A może lewo czy prawo:",
+    "buttons": [
+      {
+        "btnName": "Prawo",
+        "goto": 89,
+        "addChances": 4
+      },
+      {
+        "btnName": "Lewo",
+        "goto": 89,
+        "addChances": 8
+      }
+    ]
+  },
+  {
+    "text": "Ty:",
+    "buttons": [
+      {
+        "btnName": "Lewo",
+        "goto": 90,
+        "addChances": 4
+      },
+      {
+        "btnName": "Prawo",
+        "goto": 90,
+        "addChances": 8
+      }
+    ]
+  },
+  {
+    "text": "Ostatni:",
+    "buttons": [
+      {
+        "btnName": "Lewo",
+        "goto": 91,
+        "addChances": 8
+      },
+      {
+        "btnName": "Prawo",
+        "goto": 91,
+        "addChances": 4
+      }
+    ]
+  },
+  {
+    "text": "CHANCE",
+    "percent": "var",
+    "success": 93,
+    "failure": 92
+  },
+  {
+    "text": "Niestety, mimo wszelkich starań dziwna sytuacja z mijaniem nie poszła po Twojej myśli i musiałeś ratować się ucieczką przez boczne wejście do alejki. Zajęło Ci to dużo czasu i cały chleb został wykupiony. Została tylko jedna twarda bułka.",
+    "buttons": [
+      {
+        "btnName": "Kontynuuj zakupy",
+        "goto": 94,
+        "addThing": "Sucha buła"
+      }
+    ]
+  },
+  {
+    "text": "Brawo! Udało Ci się wybrnąć z tej dziwnej sytuacji! Pachnący świeżością chlebek wylądował w Twojej torbie!",
+    "buttons": [
+      {
+        "btnName": "Super! Kontynuuj zakupy",
+        "goto": 94,
+        "addThing": "Chleb"
+      }
+    ]
+  },
+  {
+    "text": "Dobra, pieczywo załatwione, nie była to prosta walka, ale dałeś radę. Przeraża Cię jednak myśl, że to był zaledwie jeden produkt, jeszcze ser, szynka i... no właśnie co? Nie pamiętam...\nZ tego wszystkiego zapomniałeś jak dojść do lodówek. Znajdujesz więc ochroniarza Cezarego, którego bardzo lubisz",
+    "buttons": [
+      {
+        "btnName": "Zapytaj o drogę do lodówek.",
+        "goto": 95
+      }
+    ]
+  },
+  {
+    "text": "-Dzień dobry!\n-Ńhsoy ńzłąg!\nPrzykry przypadek... Ochroniarz Cezary wiele lat praktykował bezpieczeństwo cyfrowe i teraz mówi szyfrem.\n-Panie Cezary, wyleciało mi z głowy, czy powie mi Pan jak dojść do lodówek?\n-Zmhgęscmso! Wdbsbh ćgutz ńzścn ńz ńhskvd żąhgżąkę, tćźąg śobć z ćdćkś, hkąkh hk ązqsow. Żzćow żązbćz ńz wktkązxźę, ę uoęz żąhoń bvzńgmhkws, żzmhdśobh mrvźń, śobćoc żąhg uzńźętkmr!\n-Dziękuję ślicznie!\nJak dojść do lodówek?",
+    "buttons": [
+      {
+        "btnName": "Cały czas prosto, aż do artykułów biurowych, a potem pierwsza w prawo",
+        "goto": 96,
+        "addEvent": "Nie odszyfrowałeś Cezarego..."
+      },
+      {
+        "btnName": "W lewo do makaronów, prosto aż do alkoholi i jeszcze raz w lewo przy kasach",
+        "goto": 96,
+        "addEvent": "Nie odszyfrowałeś Cezarego..."
+      },
+      {
+        "btnName": "Do działu przypraw, prosto do makaronów, w lewo przed słodyczami",
+        "goto": 97,
+        "addThing": "Ser i szynka"
+      },
+      {
+        "btnName": "Zawróć, idź do działu z wodami, potem w prawo na słodycze i znowu w prawo przy płytach CD",
+        "goto": 96,
+        "addEvent": "Nie odszyfrowałeś Cezarego..."
+      }
+    ]
+  },
+  {
+    "text": "Iuo!",
+    "buttons": [
+      {
+        "btnName": "Bżąźłdś śobhmho ąkh",
+        "goto": 95
+      }
+    ]
+  },
+  {
+    "text": "I jesteś na miejscu! Wybierasz ser, szynkę, chowasz do torebki, tutaj akurat poszło gładko. Super! Kierujesz się w stronę kasy. Idziesz przez makarony, wody, przyprawy, alkohole, elektronikę... Alkohole?! No tak! Wiesz już co miałeś kupić - piwko na wieczór.",
+    "buttons": [
+      {
+        "btnName": "Odpuść sobie",
+        "goto": 114
+      },
+      {
+        "btnName": "Dlaczego nie? Bierzemy!",
+        "goto": 98,
+        "missionStart": 1
+      }
+    ]
+  },
+  {
+    "text": "Jako student kierujesz się wieloma ważnymi wytycznymi dotyczącymi tego trunku, jednak najważniejsza z nich to wynik wzoru słynnego matematyka.\nNiech S oznacza studenta, który stoi przed wyborem piwa P. Przyjmijmy, że P jest parą (c, p), gdzie c oznacza ceną piwa, a p oznacza procent zawartości alkoholu. Funkcja f mapuje obiekt S w obiekt S w posiadaniu obiektu P na podstawie wzoru y = P(procent) / P(cena) i przypisuje obiekt P wybierając najwyższą uzyskaną wartość.\nMasz do wyboru 4 trunki z następującymi wartościami y. Wybierz mądrze.",
+    "buttons": [
+      {
+        "btnName": "2,25",
+        "goto": 99,
+        "addChances": 80
+      },
+      {
+        "btnName": "2,36",
+        "goto": 99,
+        "addChances": 85
+      },
+      {
+        "btnName": "3,91",
+        "goto": 100,
+        "addChances": 55
+      },
+      {
+        "btnName": "0",
+        "goto": 101,
+        "addChances": 30
+      }
+    ]
+  },
+  {
+    "text": "Wybrałeś stosunkowo tanie, ale przyzwoite piwko.",
+    "buttons": [
+      {
+        "btnName": "Sięgnij po piwko",
+        "goto": 102
+      }
+    ]
+  },
+  {
+    "text": "Zbójeckie klasyczne? Odważnie.",
+    "buttons": [
+      {
+        "btnName": "Sięgnij zbója",
+        "goto": 102
+      }
+    ]
+  },
+  {
+    "text": "Karmi??????",
+    "buttons": [
+      {
+        "btnName": "Sięgnik po \"piwko\"",
+        "goto": 102
+      }
+    ]
+  },
+  {
+    "text": "Twój wybór stoi bardzo wysoko na półce, musisz pożyczyć stołeczek, który jest obok, ciekawe czy uda Ci się sięgnąć...",
+    "buttons": [
+      {
+        "btnName": "Próbuj",
+        "goto": 103
+      },
+      {
+        "btnName": "Wycofaj się",
+        "goto": 114
+      }
+    ]
+  },
+  {
+    "text": "Stajesz na stołeczku, ale to nie zapewnia pewnego chwytu. W jednej ręce trzymasz torbę z resztą zakupów, a drugą starasz się sięgnąć.",
+    "buttons": [
+      {
+        "btnName": "Stań na palcach",
+        "goto": 104
+      }
+    ]
+  },
+  {
+    "text": "Wyciągasz się jeszcze bardziej aż w końcu masz!",
+    "buttons": [
+      {
+        "btnName": "Chwyć piwo",
+        "goto": 105
+      }
+    ]
+  },
+  {
+    "text": "CHANCE",
+    "percent": "var",
+    "success": 115,
+    "failure": 106
+  },
+  {
+    "text": "Niestety, to piwo było za wysoko, stołeczek, na którym stałeś na palcach przechylił się w jedną stronę i runąłeś jak worek cementu na półkę z piwem.",
+    "buttons": [
+      {
+        "btnName": "Uciekaj!",
+        "goto": 109,
+        "addEvent": "Haniebna ucieczka"
+      },
+      {
+        "btnName": "Zostań",
+        "goto": 107,
+        "addEvent": "Odpowiedzialność za czyny"
+      }
+    ]
+  },
+  {
+    "text": "Postanowiłeś przyznać się do błędu i zostać przy tym całym bałaganie, około 30 sztuk butelek rozbiło się o podłogę, trzask był na cały sklep. Po chwili przyszedł ochroniarz Cezary\n-Mz ćd bsó... Zś, wvzńg, msobh, jo Msó hxkw. Ńzłąk hwgtkś, śk ćz hkvkćęsó.",
+    "buttons": [
+      {
+        "btnName": "Idź do kasy",
+        "goto": 108
+      }
+    ]
+  },
+  {
+    "text": "Uff, dobrze, że ten ochroniarz się pojawił, sprawa załatwiona, pewno po prostu spiszą to na straty.",
+    "buttons": [
+      {
+        "btnName": "Wyłóż zakupy na taśmę.",
+        "goto": 119
+      }
+    ]
+  },
+  {
+    "text": "Rzuciłeś się w ucieczkę.\nPrzyprawy, lewa!\nWoda, lewa!\nPiekarnia, w prawo!\nElektronika, gdzie teraz?!",
+    "buttons": [
+      {
+        "btnName": "Prawo",
+        "goto": 110
+      },
+      {
+        "btnName": "Lewo",
+        "goto": 110
+      }
+    ]
+  },
+  {
+    "text": "CHANCE",
+    "percent": 50,
+    "success": 113,
+    "failure": 111
+  },
+
+  {
+    "text": "To nie był dobry wybór. To ta sama przeklęta alejka, w której stoczyłeś bitwę. Tym razem z jednej strony kasjerka, a z drugiej kierownik sklepu. Mają Cię!\n-Wszystko widzieliśmy. Jest Pan świadom, że szkody te i tak idą na sklep i nie musiał Pan uciekać?\nCzyli nie masz ani piwka, ani wstydu...",
+    "buttons": [
+      {
+        "btnName": "Idź w stronę kasy",
+        "goto": 113,
+        "addEvent": "...nieudana"
+      }
+    ]
+  },
+  {
+    "text": "Słabo trochę, no ale cóż. Twój błąd.",
+    "buttons": [
+      {
+        "btnName": "Wyłóż zakupy na taśmę",
+        "goto": 119
+      }
+    ]
+  },
+  {
+    "text": "Udało się! Uciekłeś przed wstydem, ale nie masz piwka na wieczór... Trudno, nie masz odwagi wrócić do półki z piwami. Idziesz w stronę kasy",
+    "buttons": [
+      {
+        "btnName": "Wyłóż zakupy na taśmę",
+        "goto": 119,
+        "addEvent": "...ale przynajmniej udana"
+      }
+    ]
+  },
+  {
+    "text": "Kierujesz się więc w stronę kasy, czekasz w kolejce. I czekasz... Czekasz... A może by tak wrócić się po piwko?",
+    "buttons": [
+      {
+        "btnName": "Tak! zawracamy!",
+        "goto": 98
+      },
+      {
+        "btnName": "Nie, wyłóż zakupy na taśmę.",
+        "goto": 119
+      }
+    ]
+  },
+  {
+    "text": "CHECK",
+    "routes" : [
+      {
+        "picked": 98,
+        "goto": 116
+      }, {
+        "picked": 99,
+        "goto": 117
+      },
+      {
+        "picked": 100,
+        "goto": 118
+      }
+    ]
+  },
+  {
+    "text": "Jesteś z siebie dumny, że udało Ci się zdobyć piwko i już czujesz jego smak, idziesz do kasy, żeby zapłacić za zakupy.",
+    "buttons": [
+      {
+        "btnName": "Wyłóż zakupy na taśmę",
+        "goto": 119,
+        "addThing": "Piwo"
+      }
+    ]
+  },
+  {
+    "text": "Z dumą patrzysz na swoje (zbyt) wysokoprocentowe piwo, chowasz je do torby i kierujesz się w stronę kas.",
+    "buttons": [
+      {
+        "btnName": "Wyłóż zakupy na taśmę",
+        "goto": 119,
+        "addThing": "Zbójeckie klasyczne"
+      }
+    ]
+  },
+  {
+    "text": "Spoglądasz na... \"piwo\", czujesz lekki zawód, ale co zrobić. Masz jedynie nadzieję, że Ci nie zaszkodzi. Po przyjściu do domu zapiszesz sobie na żółtej karteczce \"Nigdy nie wybieraj piwa, dla którego y jest równe 0\". Idziesz do kasy.",
+    "buttons": [
+      {
+        "btnName": "Wyłóż zakupy na taśmę",
+        "goto": 119,
+        "addThing": "\"Piwo\""
+      }
+    ]
+  },
+  {
+    "text": "Pokolei wykładasz wszystko co masz, płacisz (bezdotykowo oczywiście) i wychodzisz ze sklepu. Strasznie dziwne te zakupy w czasach pandemii.",
+    "buttons": [
+      {
+        "btnName": "Idź w stronę domu",
+        "goto": 120
+      }
+    ]
+  },
+  {
+    "text": "Idziesz myśląc o tym co się wydarzyło, jesteś z głową w chmurach i nagle orientujesz się, że jedną nogą stoisz na przejściu dla pieszych. Jest czerwone.",
+    "buttons": [
+      {
+        "btnName": "Przebiegnij przez przejście",
+        "goto": 121,
+        "missionStart": 1
+      },
+      {
+        "btnName": "Zaczekaj na zielone",
+        "goto": 127
+      }
+    ]
+  },
+  {
+    "text": "CHECKITEM",
+    "item": "Okulary",
+    "goto": 123,
+    "else": 122
+  },
+  {
+    "text": "Rozglądasz się, ale mało widzisz. Świeci słońce, a Ty zapomniałeś okularów.",
+    "buttons": [
+      {
+        "btnName": "Przebiegnij",
+        "goto": 124,
+        "addChances": 40
+      }
+    ]
+  },
+  {
+    "text": "Dobrze, że wziąłeś okulary, niestety przez maseczkę są one zaparowane, co niewiele daje.",
+    "buttons": [
+      {
+        "btnName": "Przebiegnij",
+        "goto": 124,
+        "addChances": 70
+      }
+    ]
+  },
+  {
+    "text": "CHANCE",
+    "percent": "var",
+    "success": 126,
+    "failure": 125
+  },
+  {
+    "text": "Niestety, ale przebieganie na czerwonym nie jest mądre. Uświadamia Ci to błysk niebieskich lamp odbijający się w szybach pobliskiego bloku.\n-Proszę się zatrzymać\nSłyszysz za sobą metaliczny głos z radiowozu. Podchodzi do Ciebie dwóch policjantów, legitymują Cię i niestety, ale dają mandat w wysokości 50 złotych za przejście na czerwonym.",
+    "buttons": [
+      {
+        "btnName": "Mogło być gorzej",
+        "goto": 128,
+        "addEvent": "Mandat 50zł"
+      }
+    ]
+  },
+  {
+    "text": "Uff, udało się. Nic Cię nie przejechało, ani żadna policja nie zatrzymała, jesteś po drugiej stronie.",
+    "buttons": [
+      {
+        "btnName": "Idź w stronę domu",
+        "goto": 128,
+        "addEvent": "Poza prawem"
+      }
+    ]
+  },
+  {
+    "text": "Przechodzisz sobie na spokojnie na zielonym, bez żadnego stresu.",
+    "buttons": [
+      {
+        "btnName": "Idź w stronę domu",
+        "goto": 128
+      }
+    ]
+  },
+  {
+    "text": "To już jest koniec Twojej podróży, na drodze do domu nie ma już żadnego przejścia, idziesz sobie spacerkiem w stronę bloku. Otwierasz drzwi klatki, potem mieszkania, kładziesz zakupy, dezynfekujesz ręce i po prostu siadasz..."
+  }
+]
+}
