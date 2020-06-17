@@ -1,0 +1,35 @@
+﻿@model PagedList.IPagedList<Tournaments.Models.Tournament>
+@using PagedList.Mvc
+
+@{
+    ViewBag.Title = "Turnieje";
+}
+
+<h2>Turnieje</h2>
+
+<p>
+    @if (Request.IsAuthenticated)
+    {
+        @Html.ActionLink("Stwórz nowy turniej", "Create")
+    }
+    else
+    {
+        @Html.ActionLink("Zaloguj się, aby dodać turniej", "Create")
+    }
+</p>
+
+@using (Html.BeginForm())
+{
+    <p>
+        Szukaj turnieju po nazwie: @Html.TextBox("SearchString")
+        <input type="submit" value="Search" />
+    </p>
+}
+
+@Html.Partial("_TournamentsList", Model)
+
+
+Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount
+
+@Html.PagedListPager(Model, page => Url.Action("Index",
+    new { page, sortOrder = ViewBag.CurrentSort, currentFilter = ViewBag.CurrentFilter }))

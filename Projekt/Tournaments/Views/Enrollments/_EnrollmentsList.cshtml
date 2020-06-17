@@ -1,0 +1,30 @@
+﻿@model IEnumerable<Tournaments.Models.Enrollment>
+
+<table class="table">
+    <tr>
+        <td colspan="4" style="text-align:center">
+        @("Ranking")
+        </td>
+    </tr> 
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.First().ApplicationUser.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().Points)
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ApplicationUser.Name)
+                @Html.DisplayFor(modelItem => item.ApplicationUser.Surname)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Points)
+            </td>
+        </tr>
+    }
+</table>

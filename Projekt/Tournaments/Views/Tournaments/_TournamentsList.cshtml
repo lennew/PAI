@@ -1,0 +1,56 @@
+﻿@model PagedList.IPagedList<Tournaments.Models.Tournament>
+@using PagedList.Mvc
+
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.First().Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().Discipline)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().Date)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().Limit)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().Deadline)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().NumberOfParticipants)
+        </th>
+        <th></th>
+    </tr>
+    @{var sortedList = Model.OrderBy(t => t.Date); }
+    @foreach (var item in sortedList)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Discipline.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Date)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Limit)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Deadline)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NumberOfParticipants)
+            </td>
+            <td>
+                @Html.ActionLink("Szczegóły", "Details", "Tournaments", new { id = item.Id }, null)
+            </td>
+        </tr>
+    }
+
+</table>
+<br />

@@ -1,0 +1,136 @@
+﻿@model Tournaments.Models.Tournament
+
+@{
+    ViewBag.Title = "Szczegóły";
+}
+
+<h2>
+    @Html.DisplayFor(model => model.Name)
+</h2>
+
+<style>
+    #event-map{
+        width:100%;
+        height: 250px;
+    }
+</style>
+
+<p>
+    @if (ViewBag.Organizer)
+    {
+        @Html.ActionLink("Edytuj", "Edit", new { id = Model.Id });
+        <text>|</text>
+        @Html.ActionLink("Usuń", "Delete", new { id = Model.Id });
+        <text>|</text>
+    }
+    @Html.ActionLink("Powrót", "Index")
+</p>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Discipline)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Discipline.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Limit)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Limit)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Deadline)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Deadline)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NumberOfParticipants)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumberOfParticipants)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Organizer)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Organizer.Email)
+        </dd>
+    </dl>
+
+
+    @if(DateTime.Now > Model.Deadline)
+    {
+    }
+    else if (ViewBag.LimitExceeded)
+    {
+        <p>Brak możliwości zapisu - limit miejsc osiągnięty!</p>
+    }
+    else if (ViewBag.AlreadyEnrolled)
+    {
+        <p>Już jesteś zapisany do tego turnieju</p>
+    }
+    else
+    {
+        @Html.ActionLink("Zapisz się na turniej", "Enroll", new { id = Model.Id, ReturnUrl = "/Tournaments/Details/" + Model.Id })
+
+    }
+
+    @if (Model.Enrollments.Count > 0)
+    {
+        @Html.Partial("../Enrollments/_EnrollmentsList", Model.Enrollments.OrderByDescending(e => e.Points))
+    }
+    @if (Model.Battles.Count > 0)
+    {
+        @Html.Partial("../Battles/_BattleList", Model.Battles)
+    }
+    <div id="event-map"></div>
+    <script>
+                var map;
+                var marker;
+                var initLoc = { lat: @Model.Lattitude, lng: @Model.Longitude};
+
+                function initMap() {
+
+                    map = new google.maps.Map(document.getElementById("event-map"), {
+                        center: initLoc,
+                        zoom: 8
+                    });
+
+                    marker = new google.maps.Marker({
+                        position: initLoc,
+                        map: map,
+                        title: 'Miejsce turnieju'
+                    });
+                }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-Vifvil4BMjGZ0TYaDwiR6jqcT77aRqI&callback=initMap&libraries=&v=weekly"
+            async defer></script>
+
+    @foreach (var logo in Model.Logos)
+    {
+        <span>
+            <img id="img" class="img-thumbnail" src="@Url.Content(logo.Address)" alt="Logo" />
+        </span>
+    }
+</div>

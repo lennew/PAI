@@ -1,0 +1,68 @@
+﻿@model Tournaments.Models.Tournament
+
+@{
+    ViewBag.Title = "Usuń turniej";
+}
+<h3>
+    Czy na pewno chcesz usunąć @Html.DisplayFor(model => model.Name)?
+</h3>
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+
+        <dd>
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Discipline)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Discipline.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Limit)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Limit)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Deadline)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Deadline)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NumberOfParticipants)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumberOfParticipants)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+<div class="form-actions no-color">
+    <input type="submit" value="Delete" class="btn btn-default" /> |
+    @Html.ActionLink("Powrót do listy", "Index")
+    |
+    @Html.ActionLink("Powrót do turnieju", "Details/" + Model.Id)
+</div>
+    }
+</div>

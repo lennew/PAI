@@ -1,0 +1,20 @@
+﻿@model Tournaments.Models.ApplicationUser
+@{
+    ViewBag.Title = "Nadchodzące wydarzenia";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>Nadchodzące turnieje:</dt>
+        <dd>
+            @Html.Partial("../Tournaments/_TournamentsList", (PagedList.IPagedList<Tournaments.Models.Tournament>)ViewBag.Tournaments)
+        </dd>
+        <dt>Nadchodzące spotkania:</dt>
+        <dd>
+            @Html.Partial("../Battles/_BattleList", (IEnumerable<Tournaments.Models.Battle>)ViewBag.Battles)
+        </dd>
+    </dl>
+</div>

@@ -1,0 +1,30 @@
+﻿@model Tournaments.Models.Battle
+
+@{
+    ViewBag.Title = "Wskaż zwycięzcę";
+}
+
+<h2>Wskaż zwycięzcę</h2>
+
+@using (Html.BeginForm("Edit", "Battles", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h4>Battle</h4>
+        <hr />
+        @Html.HiddenFor(model => model.Id)
+
+        @Html.DropDownList("WinnerId", (List<SelectListItem>)ViewBag.DropdownNames, "Wybierz zwycięzcę")
+
+        <div class="form-group">
+            <sdiv class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </sdiv>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Powrót do listy", "Index")
+</div>

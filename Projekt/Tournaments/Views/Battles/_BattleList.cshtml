@@ -1,0 +1,44 @@
+﻿@model IEnumerable<Tournaments.Models.Battle>
+
+<table class="table">
+    <tr>
+        <td colspan="4" style="text-align:center">
+        @("Tabela pojedynków")
+        </td>
+    </tr>
+
+@foreach (var item in Model) {
+    if (item.Winner1Id == item.Winner2Id && item.Winner2Id != null)
+    {
+        continue;
+    }
+    string fullName1 = item.Player1.Name + " " + item.Player1.Surname;
+    string fullName2 = item.Player2.Name + " " + item.Player2.Surname;
+    var isParticipant = false;
+    if (ViewBag.currentUserId == item.Player1.Id)
+    {
+        isParticipant = item.Winner1Id == null;
+    } else if (ViewBag.currentUserId == item.Player2.Id)
+    {
+        isParticipant = item.Winner2Id == null;
+    }
+<tr>
+    <td style="text-align:center"> 
+        @(fullName1)
+    </td>
+    <td style="text-align:center">
+        @(" vs ")
+    </td>
+    <td style="text-align:center">
+        @(fullName2)
+    </td>
+    <td style="text-align:right; width: 1%; white-space: nowrap">
+        @if (isParticipant)
+        {
+            @Html.ActionLink("Wybierz zwycięzcę", "Edit", "Battles", new { id = item.Id, returnUrl = "/Tournaments/Details/" + item.Tournament.Id }, null)
+        }
+    </td>
+</tr>
+}
+
+</table>

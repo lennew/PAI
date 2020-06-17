@@ -1,0 +1,119 @@
+﻿@model Tournaments.Models.Tournament
+
+@{
+    ViewBag.Title = "Dodaj turniej";
+}
+
+<style>
+    #event-map {
+        height: 250px;
+        width: 500px;
+    }
+</style>
+
+<h2>Stwórz swój własny turniej</h2>
+
+@using (Html.BeginForm("Create", "Tournaments", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+    
+<div class="form-horizontal">
+    <hr />
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    <div class="form-group">
+        @Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Discipline, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.DropDownListFor(
+               model => model.DisciplineId,
+               ((SelectList)ViewBag.Disciplines), "Wybierz dyscyplinę")
+            @Html.ValidationMessageFor(model => model.DisciplineId, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Date, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Date, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.Date, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Limit, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Limit, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.Limit, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Deadline, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Deadline, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.Deadline, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Logos, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            <input multiple="multiple" type="file" id="logos" name="logos" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Lattitude, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.ValidationMessageFor(model => model.Lattitude, "", new { @class = "text-danger" })
+            @Html.HiddenFor(model => model.Lattitude)
+            @Html.HiddenFor(model => model.Longitude)
+            <div id="event-map"></div>
+            <script>
+                var map;
+                var marker;
+                var initLoc = { lat: 52.13, lng: 21 };
+                
+                function initMap() {
+
+                    map = new google.maps.Map(document.getElementById("event-map"), {
+                        center: initLoc,
+                        zoom: 8
+                    });
+
+                    marker = new google.maps.Marker({
+                        map: map,
+                        title: 'Miejsce turnieju'
+                    });
+
+                    google.maps.event.addListener(map, 'click', function (event) {
+                        $("#Lattitude").val(event.latLng.lat());
+                        $("#Longitude").val(event.latLng.lng());
+                        marker.setPosition(event.latLng);
+                    });
+                }
+            </script>
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-Vifvil4BMjGZ0TYaDwiR6jqcT77aRqI&callback=initMap&libraries=&v=weekly"
+                    async defer></script>
+        </div>
+    </div>
+
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Create" class="btn btn-default" />
+        </div>
+    </div>
+</div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
